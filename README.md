@@ -21,3 +21,15 @@ Sample Input:
 mat = [[0,1,1,0],[0,1,1,0],[0,0,0,1]]
 
 Output: 3
+
+
+In the dynamic programming solution, the dp array is used to store the counts of the longest lines of consecutive 1s along each direction as we traverse the input matrix.
+
+When we reach a new element in the input matrix, we update the dp array by considering the value of the element and the values in the dp array for the previous elements.
+
+Complexity
+Time complexity:
+O(mn). The entire matrix is traversed once only
+
+Space complexity:
+O(n+m). dp array of size 2(n+m) for the diagonals and array of size n , where n is the number of columns for vertical lines.
